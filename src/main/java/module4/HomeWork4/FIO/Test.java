@@ -8,11 +8,11 @@ public class Test {
         String text = scanner.nextLine();
         int firstSpaceIndex = text.indexOf(' ');
         int secondSpaceIndex = text.lastIndexOf(' ');
-        String familiya = text.substring(0, firstSpaceIndex);
-        String imya = text.substring(firstSpaceIndex + 1, secondSpaceIndex);
-        String otchestvo = text.substring(secondSpaceIndex + 1);
-        System.out.println("Фамилия: " + familiya);
-        System.out.println("Имя: " + imya);
-        System.out.println("Отчество: " + otchestvo);
+        String surname = text.substring(0, firstSpaceIndex);
+        String name = text.substring(firstSpaceIndex + 1, secondSpaceIndex);
+        String patronymic = text.substring(secondSpaceIndex + 1);
+        System.out.println("Фамилия: " + surname);
+        System.out.println("Имя: " + name);
+        System.out.println("Отчество: " + patronymic);
     }
 }

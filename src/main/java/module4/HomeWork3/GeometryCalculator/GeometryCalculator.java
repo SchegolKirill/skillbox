@@ -3,31 +3,20 @@ package module4.HomeWork3.GeometryCalculator;
 public class GeometryCalculator {
     // метод должен использовать абсолютное значение radius
     public static double getCircleSquare(double radius) {
-        double s = Math.PI * Math.pow(Math.abs(radius), 2);
-        return s;
+        return Math.PI * Math.pow(Math.abs(radius), 2);
     }
 
     // метод должен использовать абсолютное значение radius
     public static double getSphereVolume(double radius) {
-        double s = 4 / 3 * Math.PI * Math.pow(Math.abs(radius), 3);
-         return s;
+         return 4 / 3 * Math.PI * Math.pow(Math.abs(radius), 3);
     }
 
     public static boolean isTriangleRightAngled(double a, double b, double c) {
         if((a + b) > c ){
             return true;
-        }else if ((a + b ) <= c){
+        }else{
             return false;
-        }else if ((a + c) > b){
-            return true;
-        }else if((a + c) <= b){
-            return false;
-        }else if((b + c) > a){
-            return true;
-        }else if((b + c) <= a){
-            return false;
-        }else {
-            return false;}
+        }
     }
 
     // перед расчетом площади рекомендуется проверить возможен ли такой треугольник
