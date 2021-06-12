@@ -8,21 +8,23 @@ public class Test {
         String number = scanner.nextLine();
 
         String phoneNumber = number.replaceAll("[^0-9]", "");
-        System.out.println(phoneNumber);
-         if(phoneNumber.length() == 11 && phoneNumber.charAt(0) == 7){
-             System.out.println(phoneNumber);
-         }else if(phoneNumber.length() == 11 && phoneNumber.charAt(0) == 8){
-             System.out.println(phoneNumber.replace(phoneNumber.charAt(0), '7'));
-         }else if(phoneNumber.length() == 11 && phoneNumber.charAt(0) != '7' && phoneNumber.charAt(0) != '8'){
-             System.out.println("Неверный формат номера");
-         }else if(phoneNumber.length() > 11){
-             System.out.println("Неверный формат номера");
-         }else if(phoneNumber.length() < 10){
-             System.out.println("Неверный формат номера");
-         }else if (phoneNumber.length() == 10) {
-             System.out.println(7 + phoneNumber);
+
+        if(phoneNumber.length() == 10 || phoneNumber.length() == 11){
+            if(phoneNumber.length() == 10){
+                 System.out.println(7 + phoneNumber);
+            }else {
+                 if (phoneNumber.charAt(0) == '7'){
+                     System.out.println(phoneNumber);
+                 }
+                 else if (phoneNumber.charAt(0) == '8'){
+                     System.out.println("7" + phoneNumber.substring(1));
+                 }
+                 else{
+                     System.out.println("Неверный формат номера");
+                 }
+            }
+            }else{
+                System.out.println("Неверный формат номера");
          }
-
     }
-
 }
