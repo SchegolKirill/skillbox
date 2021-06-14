@@ -20,15 +20,13 @@ public class Test {
             if(allTemperatures[i] >= MIN_NORMAL_TEMPERATURE && allTemperatures[i] <= MAX_NORMAL_TEMPERATURE){
                 sum2 += 1;
             }
-            System.out.printf("%.1f", allTemperatures[i]);
-            System.out.print(" ");
+            System.out.printf("%.1f ", allTemperatures[i]);
         }
 
         float averageValueTemperature = sum1 / allTemperatures.length;
 
-        System.out.println();
-        System.out.printf("Средняя температура: " + "%.1f",averageValueTemperature);
-        System.out.println();
-        System.out.println("Количество здоровых: " + sum2);
+        System.out.printf(
+                "\nСредняя температура: %.1f\n" +
+                        "Количество здоровых: %d\n",averageValueTemperature, sum2);
     }
 }

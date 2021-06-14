@@ -2,10 +2,10 @@ package module5.HomeWork1.XProject;
 
 public class Test {
     public static void main(String[] args) {
-        String[][] x = new String[7][7];
+        String[][] x = new String[8][8];
 
         int upCount = 0;
-        int downCount = 6;
+        int downCount = 7;
 
         for(int i = 0; i < x.length; i++){
             for(int j = 0; j < x[i].length; j++){

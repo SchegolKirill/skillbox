@@ -12,7 +12,7 @@ public class GeometryCalculator {
     }
 
     public static boolean isTriangleRightAngled(double a, double b, double c) {
-        if((a + b) > c ){
+        if((a + b) > c && (a + c) > b && (c + b) > a){
             return true;
         }else{
             return false;

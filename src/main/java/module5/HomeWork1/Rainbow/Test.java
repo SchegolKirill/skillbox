@@ -4,13 +4,13 @@ public class Test {
     public static void main(String[] args) {
         String text = "Каждый охотник желает знать, где сидит фазан";
         String[] colorWords = text.split(",?\\s+");
-        String[] colorWords2 = new String[colorWords.length];
-        int j = colorWords2.length - 1;
-        for(int i = 0; i < colorWords.length; i++) {
-            colorWords2[j] = colorWords[i];
-            j--;
+        String temp = "";
+        for (int i = 0; i < colorWords.length / 2; i++){
+            temp = colorWords[i];
+            colorWords[i] = colorWords[colorWords.length - i - 1];
+            colorWords[colorWords.length - i - 1] = temp;
         }
-        for(String word : colorWords2){
+        for(String word : colorWords){
             System.out.println(word);
         }
     }
