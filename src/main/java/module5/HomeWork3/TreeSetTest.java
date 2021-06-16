@@ -1,4 +1,4 @@
-package module5.HomewWork3;
+package module5.HomeWork3;
 
 import java.util.Scanner;
 import java.util.TreeSet;
