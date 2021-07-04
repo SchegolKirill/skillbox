@@ -1,45 +1,52 @@
 package module5.HomeWork2.ToDoListCommands;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
 
         ArrayList<String> todoList = new ArrayList<>();
-        for(int i = 0; i < 30; i++){
+        for (int i = 0; i < 3; i++) {
             todoList.add("дело" + i);
         }
 
         Scanner scanner = new Scanner(System.in);
-        for(;;) {
-
+        while (true) {
             String command = scanner.nextLine();
-            String[] commands = command.split(" ");
-            String delo = "";
+            String[] commands = command.split(" ", 3);
+            String code = commands[0];
 
-            if (commands[0].equals("LIST")) {
-                for (String item : todoList) {
-                    System.out.println(item);
+            if (commands.length == 1) {
+                if (code.equals("LIST")) {
+                    System.out.println(todoList);
                 }
-            } else if (commands[0].equals("ADD") && command.replaceAll("[^0-9]", "").equals("")) {
-                for (int i = 1; i < commands.length; i++) {
-                    delo = delo + commands[i] + " ";
+                if (code.equals("STOP")) {
+                    return;
                 }
-                todoList.add(delo);
-            } else if (commands[0].equals("ADD") && Integer.parseInt(commands[1]) == Integer.parseInt(command.replaceAll("[^0-9]", ""))) {
-                for (int i = 2; i < commands.length; i++) {
-                    delo = delo + commands[i] + " ";
-                }
-                todoList.add(Integer.parseInt(commands[1]), delo);
-            } else if (commands[0].equals("EDIT") && Integer.parseInt(commands[1]) == Integer.parseInt(command.replaceAll("[^0-9]", ""))) {
-                for (int i = 2; i < commands.length; i++) {
-                    delo = delo + commands[i] + " ";
-                }
-                todoList.set(Integer.parseInt(commands[1]), delo);
-            } else if (commands[0].equals("DELETE") && Integer.parseInt(commands[1]) == Integer.parseInt(command.replaceAll("[^0-9]", ""))) {
-                todoList.remove(Integer.parseInt(commands[1]));
             }
+
+            if (commands.length == 2) {
+                if (code.equals("ADD")) {
+                    todoList.add(commands[1]);
+                }
+                if (code.equals("DELETE")) {
+                    todoList.remove(Integer.parseInt(commands[1]));
+                }
+            }
+
+            if (commands.length == 3) {
+                int position = Integer.parseInt(commands[1]);
+                String delo = commands[2];
+
+                if (code.equals("ADD")) {
+                    todoList.add(position, delo);
+                } else if (code.equals("EDIT")) {
+                    todoList.set(position, delo);
+                }
+            }
+
         }
     }
 }
