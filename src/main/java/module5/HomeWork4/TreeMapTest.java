@@ -1,5 +1,6 @@
 package module5.HomeWork4;
 
+import java.sql.SQLOutput;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,37 +24,26 @@ public class TreeMapTest {
             }
 
             while (m1.find() || m2.find()) {
-                if (m1.matches()){
-                    if(phoneList.containsKey(textString.substring(m1.start(), m1.end())) && !phoneList.containsValue("No name")){
+                if(m1.matches()){
+                    if (phoneList.containsKey(textString.substring(m1.start(), m1.end()))) {
                         System.out.println(textString.substring(m1.start(), m1.end()) + " => "
                                 + phoneList.get(textString.substring(m1.start(), m1.end())));
-                    }else if(phoneList.containsKey(textString.substring(m1.start(), m1.end())) && phoneList.containsValue("No name")){
-                        System.out.println("Введите имя");
-                    }else if(phoneList.containsKey("No key")){
-                        phoneList.put(textString.substring(m1.start(), m1.end()), phoneList.get("No key"));
-                        phoneList.remove("No key");
                     }else{
-                        phoneList.put(textString.substring(m1.start(), m1.end()), "No name");
-                        System.out.println("Введите имя");
+                        System.out.println("Номер телефона не найден, введите имя");
+                        String name = scanner.nextLine();
+                        phoneList.put(textString, name);
                     }
-                }else if (m2.matches()){
-                    if(phoneList.containsValue(textString.substring(m2.start(), m2.end())) && !phoneList.containsKey("No key")){
+                }else if(m2.matches()){
+                    if(phoneList.containsValue(textString.substring(m2.start(), m2.end()))){
                         for(Map.Entry<String, String> item : phoneList.entrySet()){
                             if(item.getValue().equals(textString.substring(m2.start(), m2.end()))){
                                 System.out.println(item.getKey() + " => " + item.getValue());
                             }
                         }
-                    }else if(phoneList.containsValue(textString.substring(m2.start(), m2.end())) && phoneList.containsKey("No key")){
-                        System.out.println("Введите номер телефона");
-                    }else if(phoneList.containsValue("No name")){
-                        for(Map.Entry<String, String> item : phoneList.entrySet()){
-                            if(item.getValue().equals("No name")){
-                                item.setValue(textString.substring(m2.start(), m2.end()));
-                            }
-                        }
                     }else{
-                        phoneList.put("No key", textString.substring(m2.start(), m2.end()));
-                        System.out.println("Введите номер телефона");
+                        System.out.println("Имя не найдено, введите номер телефона");
+                        String number = scanner.nextLine();
+                        phoneList.put(number, textString);
                     }
                 }
             }
