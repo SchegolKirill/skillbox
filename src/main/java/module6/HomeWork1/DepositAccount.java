@@ -5,16 +5,16 @@ import java.time.LocalDateTime;
 
 
 public class DepositAccount extends BankAccount{
-    LocalDateTime date1;
-    LocalDateTime date2;
+    LocalDateTime withdrawDate;
+    LocalDateTime depositDate;
 
     public DepositAccount(double money){
         super(money);
     }
 
     public void withdrawMoney(double withdrawedMoney) {
-        date1 = LocalDateTime.now();
-        if ((date1 == date2.plusMonths(1))) {
+        withdrawDate = LocalDateTime.now();
+        if ((withdrawDate == depositDate.plusMonths(1))) {
             this.money = this.money - withdrawedMoney;
         }else{
             System.out.println("Средства снять невозможно");
@@ -22,7 +22,7 @@ public class DepositAccount extends BankAccount{
     }
     @Override
     public void depositMoney (double depositedMoney)  {
-        date2 = LocalDateTime.now();
+        depositDate = LocalDateTime.now();
         this.money = this.money + depositedMoney;
     }
 }

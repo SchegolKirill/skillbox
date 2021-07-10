@@ -33,7 +33,7 @@ public class TreeMapTest {
                         String name = scanner.nextLine();
                         phoneList.put(textString, name);
                     }
-                }else if(m2.matches()){
+                }if(m2.matches()){
                     if(phoneList.containsValue(textString.substring(m2.start(), m2.end()))){
                         for(Map.Entry<String, String> item : phoneList.entrySet()){
                             if(item.getValue().equals(textString.substring(m2.start(), m2.end()))){
