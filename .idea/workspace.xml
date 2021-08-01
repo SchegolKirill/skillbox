@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfb696c4-6dd2-47d5-9e43-46a0cb51ba2b" name="Default Changelist" comment="more structural change">
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork3/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork3/IndividualPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork3/LegalPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork3/SoleProprietor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/LowestSalaryComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/TopManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork4/TopSalaryComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module8/HomeWork1/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module8/HomeWork1/CustomerStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module8/HomeWork1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module4/HomeWork4/startask/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module4/HomeWork4/startask/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module5/HomeWork4/TreeMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module5/HomeWork4/TreeMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module6/HomeWork1/DepositAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork1/DepositAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module6/HomeWork1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module6/HomeWork1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +39,29 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1swFg91yl528VERAXgub2fxAbqC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/module7/airport-1.0.1.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaMarathon2020\skillbox\src\main\java\module7" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src.main.java" />
     </key>
@@ -79,12 +70,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="module6.HomeWork3.Main" />
-      <module name="Skillbox" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="module8.HomeWork1.Main" />
+      <module name="qwerty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="module6.HomeWork3.*" />
+          <option name="PATTERN" value="module8.HomeWork1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,11 +84,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="module6.HomeWork1.Main" />
-      <module name="Skillbox" />
+      <option name="MAIN_CLASS_NAME" value="module7.HomeWork2Airport.Main" />
+      <module name="qwerty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="module6.HomeWork1.*" />
+          <option name="PATTERN" value="module7.HomeWork2Airport.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +110,11 @@
       </method>
     </configuration>
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="module4.HomeWork6.BirthDay.Test" />
-      <module name="Skillbox" />
+      <option name="MAIN_CLASS_NAME" value="module3.testjar.Test" />
+      <module name="qwerty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="module4.HomeWork6.BirthDay.*" />
+          <option name="PATTERN" value="module3.testjar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="module5.HomeWork1.Rainbow.Test" />
-      <module name="Skillbox" />
+    <configuration name="TestModule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="module7.TestModule" />
+      <module name="qwerty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="module5.HomeWork1.Rainbow.*" />
+          <option name="PATTERN" value="module7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,26 +135,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="module5.HomeWork4.TreeMapTest" />
-      <module name="Skillbox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="module5.HomeWork4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="airport-1.0.1.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/airport-1.0.1.jar" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestModule" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TreeMapTest" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="JAR Application.airport-1.0.1.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625406284491</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="module7 complete">
+      <created>1626629782336</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626629782336</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +230,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="structural change" />
     <MESSAGE value="more structural change" />
     <MESSAGE value="regular win" />
@@ -249,7 +239,8 @@
     <MESSAGE value="complete module 5 homework 5" />
     <MESSAGE value="5.4 + 6.1 tasks complete" />
     <MESSAGE value="module 6 complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="module 6 complete" />
+    <MESSAGE value="module7 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="module7 complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
